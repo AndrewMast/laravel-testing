@@ -7,7 +7,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^12.0",
+        "laravel/framework": "dev-gitbutler/workspace as 12.0.x-dev",
         "laravel/tinker": "^2.10.1"
     },
     "require-dev": {
@@ -70,6 +70,18 @@
             "php-http/discovery": true
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../laravel-framework",
+            "options": {
+                "symlink": true,
+                "versions": {
+                    "laravel/framework": "dev-gitbutler/workspace"
+                }
+            }
+        }
+    ],
     "minimum-stability": "stable",
     "prefer-stable": true
 }
